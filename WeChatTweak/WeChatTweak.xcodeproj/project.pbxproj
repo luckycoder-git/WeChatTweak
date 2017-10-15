@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14B4D26B1F7236080093D9B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4D26A1F7236080093D9B0 /* Foundation.framework */; };
+		14B4D2761F7236080093D9B0 /* WeChatTweak.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14B4D2751F7236080093D9B0 /* WeChatTweak.mm */; };
+		14B4D2811F72375D0093D9B0 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4D2801F72375D0093D9B0 /* libsubstrate.dylib */; };
+		14B4D2831F7237930093D9B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4D2821F7237930093D9B0 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14B4D2671F7236080093D9B0 /* WeChatTweak.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = WeChatTweak.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B4D26A1F7236080093D9B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		14B4D26F1F7236080093D9B0 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		14B4D2701F7236080093D9B0 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		14B4D2721F7236080093D9B0 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		14B4D2731F7236080093D9B0 /* WeChatTweak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeChatTweak-Prefix.pch"; sourceTree = "<group>"; };
+		14B4D2741F7236080093D9B0 /* WeChatTweak.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WeChatTweak.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		14B4D2751F7236080093D9B0 /* WeChatTweak.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WeChatTweak.mm; sourceTree = "<group>"; };
+		14B4D27A1F7236080093D9B0 /* WeChatTweak.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = WeChatTweak.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/WeChatTweak.plist; sourceTree = "<group>"; };
+		14B4D2801F72375D0093D9B0 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = WeChatTweak/libsubstrate.dylib; sourceTree = "<group>"; };
+		14B4D2821F7237930093D9B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14B4D2631F7236080093D9B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B4D2831F7237930093D9B0 /* UIKit.framework in Frameworks */,
+				14B4D2811F72375D0093D9B0 /* libsubstrate.dylib in Frameworks */,
+				14B4D26B1F7236080093D9B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B4D25C1F7236080093D9B0 = {
+			isa = PBXGroup;
+			children = (
+				14B4D2801F72375D0093D9B0 /* libsubstrate.dylib */,
+				14B4D26C1F7236080093D9B0 /* WeChatTweak */,
+				14B4D2691F7236080093D9B0 /* Frameworks */,
+				14B4D2681F7236080093D9B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14B4D2681F7236080093D9B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14B4D2671F7236080093D9B0 /* WeChatTweak.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14B4D2691F7236080093D9B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14B4D2821F7237930093D9B0 /* UIKit.framework */,
+				14B4D26A1F7236080093D9B0 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14B4D26C1F7236080093D9B0 /* WeChatTweak */ = {
+			isa = PBXGroup;
+			children = (
+				14B4D2741F7236080093D9B0 /* WeChatTweak.xm */,
+				14B4D2751F7236080093D9B0 /* WeChatTweak.mm */,
+				14B4D26D1F7236080093D9B0 /* Package */,
+				14B4D2711F7236080093D9B0 /* Supporting Files */,
+			);
+			path = WeChatTweak;
+			sourceTree = "<group>";
+		};
+		14B4D26D1F7236080093D9B0 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				14B4D26E1F7236080093D9B0 /* DEBIAN */,
+				14B4D2771F7236080093D9B0 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		14B4D26E1F7236080093D9B0 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				14B4D26F1F7236080093D9B0 /* control.txt */,
+				14B4D2701F7236080093D9B0 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		14B4D2711F7236080093D9B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14B4D2721F7236080093D9B0 /* PackageVersion.plist */,
+				14B4D2731F7236080093D9B0 /* WeChatTweak-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14B4D2771F7236080093D9B0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				14B4D2781F7236080093D9B0 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		14B4D2781F7236080093D9B0 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				14B4D2791F7236080093D9B0 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		14B4D2791F7236080093D9B0 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				14B4D27A1F7236080093D9B0 /* WeChatTweak.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		14B4D2641F7236080093D9B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		14B4D2661F7236080093D9B0 /* WeChatTweak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B4D27D1F7236080093D9B0 /* Build configuration list for PBXNativeTarget "WeChatTweak" */;
+			buildPhases = (
+				14B4D2611F7236080093D9B0 /* ShellScript */,
+				14B4D2621F7236080093D9B0 /* Sources */,
+				14B4D2631F7236080093D9B0 /* Frameworks */,
+				14B4D2641F7236080093D9B0 /* Headers */,
+				14B4D2651F7236080093D9B0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeChatTweak;
+			productName = WeChatTweak;
+			productReference = 14B4D2671F7236080093D9B0 /* WeChatTweak.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14B4D25D1F7236080093D9B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					14B4D2661F7236080093D9B0 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7VSDXKL639;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 14B4D2601F7236080093D9B0 /* Build configuration list for PBXProject "WeChatTweak" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 14B4D25C1F7236080093D9B0;
+			productRefGroup = 14B4D2681F7236080093D9B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14B4D2661F7236080093D9B0 /* WeChatTweak */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14B4D2611F7236080093D9B0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		14B4D2651F7236080093D9B0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14B4D2621F7236080093D9B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B4D2761F7236080093D9B0 /* WeChatTweak.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		14B4D27B1F7236080093D9B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		14B4D27C1F7236080093D9B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		14B4D27E1F7236080093D9B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 7VSDXKL639;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeChatTweak/WeChatTweak-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeChatTweak",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 10.10.10.3;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		14B4D27F1F7236080093D9B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 7VSDXKL639;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WeChatTweak/WeChatTweak-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeChatTweak",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 10.10.10.3;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14B4D2601F7236080093D9B0 /* Build configuration list for PBXProject "WeChatTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B4D27B1F7236080093D9B0 /* Debug */,
+				14B4D27C1F7236080093D9B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14B4D27D1F7236080093D9B0 /* Build configuration list for PBXNativeTarget "WeChatTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B4D27E1F7236080093D9B0 /* Debug */,
+				14B4D27F1F7236080093D9B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14B4D25D1F7236080093D9B0 /* Project object */;
+}

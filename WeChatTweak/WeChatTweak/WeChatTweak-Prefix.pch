@@ -1,0 +1,10 @@
+//
+// Prefix header for all source files of the 'WeChatTweak' target in the 'WeChatTweak' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
+
+#define HBLogDebug      NSLog
