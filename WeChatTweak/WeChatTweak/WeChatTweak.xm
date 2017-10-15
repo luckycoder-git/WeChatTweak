@@ -47,7 +47,6 @@ static NSMutableArray *timingIdentifierArray = nil;
     [redPacketParams setValue:nickName forKey:@"nickName"];
 }
 
-
 %end
 
 
