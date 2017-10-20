@@ -24,6 +24,7 @@ static NSMutableArray *timingIdentifierArray = nil;
     id inWay =     @"0";
     id url = nativeUrl;
     id sendId = params[@"sendid"];
+    //将红包需要的参数放入到 requestParams中
     NSMutableDictionary *requestParams = [@{} mutableCopy];
     [requestParams setValue:sendId forKey:@"sendId"];
     [requestParams setValue:agreeDuty forKey:@"agreeDuty"];
@@ -34,6 +35,7 @@ static NSMutableArray *timingIdentifierArray = nil;
     
     id serviceCenter = [%c(MMServiceCenter) performSelector:@selector(defaultCenter)];
     logicMgr =[serviceCenter performSelector:@selector(getService:) withObject:%c(WCRedEnvelopesLogicMgr)];
+    //发送请求获取 timingIdentifier
     [logicMgr performSelector:@selector(ReceiverQueryRedEnvelopesRequest:) withObject:requestParams];
     redPacketParams = requestParams;
 
@@ -56,9 +58,11 @@ static NSMutableArray *timingIdentifierArray = nil;
 {
     %log;
     %orig;
+    //获取 timingIdentifier 参数
     id reponseString = [[NSString alloc] initWithData:[[arg1 performSelector:@selector(retText)] performSelector:@selector(buffer)] encoding:NSUTF8StringEncoding];
     NSDictionary *reponse =  [reponseString performSelector:@selector(JSONDictionary)];
     id timingIdentifier = reponse[@"timingIdentifier"];
+    //抢过的红包就不再去抢了
     if (timingIdentifier&&![timingIdentifierArray containsObject:timingIdentifier]) {
         [redPacketParams setValue:timingIdentifier forKey:@"timingIdentifier"];
         [logicMgr performSelector:@selector(OpenRedEnvelopesRequest:) withObject:redPacketParams];
